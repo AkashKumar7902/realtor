@@ -52,6 +52,7 @@ const SearchFilters = () => {
                         placeholder={filter.placeholder}
                         w="fit-content"
                         p="2"
+                        key={filter.queryName}
                     >
                         {filter?.items?.map((item => (
                             <option value={item.value} key={item.value}>{item.name}</option>
